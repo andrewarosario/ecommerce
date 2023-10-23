@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "modules/layout": ["modules/feature/layout/src/index.ts"],
-      "product-data-access": ["modules/data-access/product/src/index.ts"]
+      "product-data-access": ["modules/data-access/product/src/index.ts"],
+      "product-search": ["modules/feature/product/search/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
