@@ -10,7 +10,10 @@
       [matAutocomplete]="auto"
     />
     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-      <mat-option *ngFor="let product of products" [value]="product.name">
+      <mat-option
+        *ngFor="let product of products$ | async"
+        [value]="product.name"
+      >
         {{ product.name }}
       </mat-option>
     </mat-autocomplete>
