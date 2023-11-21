@@ -7,10 +7,9 @@ import { LayoutModule } from 'modules/layout';
 import { ProductSearchComponent } from 'product-search';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
+  declarations: [AppComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
