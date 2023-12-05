@@ -1,5 +1,11 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, map } from 'rxjs';
+
+function getParamsId(): Observable<string> {
+  return inject(ActivatedRoute).params.pipe(map((params) => params['id']));
+}
 
 @Component({
   selector: 'lib-product-detail',
@@ -8,4 +14,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss',
 })
-export class ProductDetailComponent {}
+export class ProductDetailComponent {
+  activatedRoute = inject(ActivatedRoute);
+  // constructor(private activatedRoute: ActivatedRoute) {}
+  id$ = getParamsId();
+}
