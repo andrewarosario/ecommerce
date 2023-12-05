@@ -18,6 +18,7 @@
       "home": ["modules/feature/home/src/index.ts"],
       "modules/layout": ["modules/feature/layout/src/index.ts"],
       "product-data-access": ["modules/data-access/product/src/index.ts"],
+      "product-detail": ["modules/feature/product/detail/src/index.ts"],
       "product-search": ["modules/feature/product/search/src/index.ts"],
       "product-ui": ["modules/ui/product/src/index.ts"]
     }

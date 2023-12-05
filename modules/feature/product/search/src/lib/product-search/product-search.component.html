@@ -13,6 +13,7 @@
       <mat-option
         *ngFor="let product of products$ | async"
         [value]="product.name"
+        [routerLink]="['product', product.id]"
       >
         {{ product.name }}
       </mat-option>
