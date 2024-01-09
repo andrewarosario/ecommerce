@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { LayoutModule } from 'modules/layout';
 import { ProductSearchComponent } from 'product-search';
+import { CartComponent } from 'product-ui';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { HttpErrorsInterceptor } from './interceptors/http-errors/http-errors.interceptor';
@@ -20,6 +21,7 @@ import { HttpErrorsInterceptor } from './interceptors/http-errors/http-errors.in
     BrowserAnimationsModule,
     ProductSearchComponent,
     MatSnackBarModule,
+    CartComponent,
   ],
   providers: [
     {
