@@ -6,7 +6,7 @@
       @for (product of products$ | async; track product.id) {
       <lib-product-card [product]="product"></lib-product-card>
       } @empty {
-      <strong>Não temos produtos recomendados para você por enquanto.</strong>
+      <strong>Não temos produtos recomendados para você por enquanto!</strong>
       }
     </div>
   </section>
