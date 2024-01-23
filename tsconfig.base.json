@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "auth-form": ["modules/feature/auth/form/src/index.ts"],
       "home": ["modules/feature/home/src/index.ts"],
       "modules/layout": ["modules/feature/layout/src/index.ts"],
       "product-data-access": ["modules/data-access/product/src/index.ts"],
