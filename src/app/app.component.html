@@ -1,7 +1,10 @@
 <lib-header title="Ecommerce">
   <lib-product-search></lib-product-search>
-  <lib-cart [quantity]="cartService.productQuantity$ | async" right
-    >Fazer Login</lib-cart
-  >
+  <div>
+    <a routerLink="/auth">Fazer Login</a>
+    <lib-cart [quantity]="cartService.productQuantity$ | async" right
+      >Carrinho de compras</lib-cart
+    >
+  </div>
 </lib-header>
 <router-outlet></router-outlet>

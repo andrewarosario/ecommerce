@@ -1,9 +1,11 @@
 import { Route } from '@angular/router';
+import { authGuard } from 'auth-data-access';
 import { AuthFormComponent } from './auth-form/auth-form.component';
 
 export const authFormRoutes: Route[] = [
   {
     path: '',
+    canActivate: [authGuard()],
     component: AuthFormComponent,
     children: [
       {
