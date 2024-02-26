@@ -1,7 +1,8 @@
 describe('login', () => {
-  beforeEach(() => cy.visit('/auth'));
+  beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
+    cy.get('a').contains('Fazer Login').click();
     // Custom command example, see `../support/commands.ts` file
     cy.login('my-email@something.com', 'myPassword');
 
