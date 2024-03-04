@@ -15,14 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "auth-data-access": ["modules/data-access/auth/src/index.ts"],
-      "auth-form": ["modules/feature/auth/form/src/index.ts"],
-      "home": ["modules/feature/home/src/index.ts"],
-      "modules/layout": ["modules/feature/layout/src/index.ts"],
-      "product-data-access": ["modules/data-access/product/src/index.ts"],
-      "product-detail": ["modules/feature/product/detail/src/index.ts"],
-      "product-search": ["modules/feature/product/search/src/index.ts"],
-      "product-ui": ["modules/ui/product/src/index.ts"]
+      "auth-data-access": ["libs/modules/data-access/auth/src/index.ts"],
+      "auth-form": ["libs/modules/feature/auth/form/src/index.ts"],
+      "home": ["libs/modules/feature/home/src/index.ts"],
+      "layout": ["libs/modules/feature/layout/src/index.ts"],
+      "product-data-access": ["libs/modules/data-access/product/src/index.ts"],
+      "product-detail": ["libs/modules/feature/product/detail/src/index.ts"],
+      "product-search": ["libs/modules/feature/product/search/src/index.ts"],
+      "product-ui": ["libs/modules/ui/product/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
